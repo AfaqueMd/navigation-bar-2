@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(72, 82, 78);
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: white;
+            padding: 0 rem;
+        }
+        nav>img{
+            width: 140px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li{
+            padding: 0 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(87, 86, 86);
+            font-weight: bold;
+        }
+        .nav-courses a{
+            display: flex;
+            align-items: center;
+        }
+        .nav-courses span{
+            padding-left: 15px;
+        }
+        .refer-earn{
+            padding: 14px;
+            text-align: center;
+            background-color: rgb(227, 243, 250);
+            border-radius: 5px;
+            margin-right: 30px;
+        }
+        .refer-earn a{
+            color: rgb(75, 75, 253);
+        }
+        .login{
+            padding: 12px 14px;
+            border: 2px solid rgb(255, 84, 118);
+            border-radius: 5px;
+        }
+        .login a{
+            color: rgb(250, 39, 81);
+        }
+        nav ul li a:hover:not(.login a){
+            color: rgb(248, 57, 95);
+        }
+        .login:hover{
+            background-color: rgb(252, 230, 235);
+        }
+
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="nav-logo">
+            <ul>
+                <li class="nav-courses"><a href="#">COURSES<span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                    </span></a></li>
+                <li><a href="#">FEES & ISA</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">HIRE FROM US</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li class="refer-earn"><a href="#">REFER & EARN</a></li>
+                <li class="login"><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </head>
+</body>
+</html>
